@@ -83,6 +83,16 @@ console.log(wolfy);
 // ---------------------- //
 
 
+// ---------------------- //
+// ***** Yell at Ninja Turtles ***** //
 
+const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
+
+for (ninjaTurtle of ninjaTurtles) {
+    console.log(ninjaTurtle.toUpperCase());
+}
+
+
+// ---------------------- //
 
 
