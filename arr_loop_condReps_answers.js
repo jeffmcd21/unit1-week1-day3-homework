@@ -86,13 +86,74 @@ console.log(wolfy);
 // ---------------------- //
 // ***** Yell at Ninja Turtles ***** //
 
+// Create array for some turtles/artists
 const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
 
+// Loop through the array and make the names upper case
 for (ninjaTurtle of ninjaTurtles) {
     console.log(ninjaTurtle.toUpperCase());
 }
 
 
+// ---------------------- //
+
+
+// ---------------------- //
+// ***** Methods, Revisited ***** //
+
+// Create movies array
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+// Log Titanic by it's index
+console.log(favMovies[8]);
+
+// 1. Sort the array
+console.log(favMovies.sort());
+
+// 2. Pop the last item in the array
+console.log(favMovies.pop());
+
+// 3. Place a new iteam at the end of the array
+favMovies.push("Guardians of the Galaxy")
+console.log(favMovies);
+
+// 4. Reverse the array
+favMovies.reverse();
+console.log(favMovies);
+
+// 5. Remove the first item in the array
+favMovies.shift();
+console.log(favMovies);
+
+// 6. At first attempt this returned nothing different, 
+//      then I tried placing a name within the parentheses and an item appeared at the beginning of the list,
+//      I finally commented out this line of code since the instruction didn't appear to ask for something to be placed back 
+//      and supported by question 8. asking for half of the array which this question 6. left me with an odd lenght amount.
+// favMovies.unshift("Guardians of the Galax");
+favMovies.unshift();
+console.log(favMovies);
+
+// 7. Create a variable and assign it the value of the index of "Django Unchained"
+const spot = favMovies.indexOf("Django Unchained");
+// Use splice and the index value of the variable definied in the previous line to remove that 1 specific item and at that same position insert a new item "Avitar"
+favMovies.splice(spot, 1, "Avitar");
+// Log the change and view the results
+console.log(favMovies);
+
+// 8. Create a variable that contains the count of half of the array.
+const halfCt = (favMovies.length / 2);
+
+// 9.
+// Slice the last half of the movies into variable secHalf as a separate array
+const secHalf = favMovies.slice(halfCt);
+// print the array from variable secHalf 
+console.log(secHalf);
+
+// 10. log final results
+console.log(favMovies);
+
+// - F&F:
+const spot2 = favMovies.indexOf("Fast and Furious");
+console.log(spot2)
 // ---------------------- //
 
 
