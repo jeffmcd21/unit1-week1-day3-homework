@@ -169,7 +169,7 @@ console.log(secHalf);
 // 10. log final results
 console.log(favMovies);
 
-// - F&F:
+// - F&F: This still exists in the original list because slice only presents a split of the list but doesn't alter the original list.
 const spot2 = favMovies.indexOf("Fast and Furious");
 console.log(spot2)
 // ----------------------------------------------------------------------------- //
