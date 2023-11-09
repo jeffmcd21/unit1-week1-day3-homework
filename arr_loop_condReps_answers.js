@@ -18,25 +18,32 @@
 
 // ------------------------------------------------Part II: JavaScript Reps------------------------------------------------ //
 
-// ---------------------- //
+// ----------------------------------------------------------------------------- //
 // ***** Easy Going ***** //
 
 for (let i = 1; i <= 20; i++) {
     console.log(i);
 }
-// ---------------------- //
+// ----------------------------------------------------------------------------- //
 
 
-// ---------------------- //
+
+
+
+
+// ----------------------------------------------------------------------------- //
 // ***** Get Even ***** //
 
 for (let i = 0; i <= 200; i = i + 2) {
     console.log(i);
 }
-// ---------------------- //
+// ----------------------------------------------------------------------------- //
 
 
-// ---------------------- //
+
+
+
+// ----------------------------------------------------------------------------- //
 // ***** Fizz Buzz ***** //
 
 for (let i = 1; i <= 100; i++) {
@@ -50,10 +57,14 @@ for (let i = 1; i <= 100; i++) {
         console.log(i);
     }
 }
-// ---------------------- //
+// ----------------------------------------------------------------------------- //
 
 
-// ---------------------- //
+
+
+
+
+// ----------------------------------------------------------------------------- //
 // ***** Wild Wild Life ***** //
 
 const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
@@ -80,10 +91,14 @@ console.log(wolfy);
 
 wolfy.unshift("Gameboy");
 console.log(wolfy);
-// ---------------------- //
+// ----------------------------------------------------------------------------- //
 
 
-// ---------------------- //
+
+
+
+
+// ----------------------------------------------------------------------------- //
 // ***** Yell at Ninja Turtles ***** //
 
 // Create array for some turtles/artists
@@ -95,10 +110,13 @@ for (ninjaTurtle of ninjaTurtles) {
 }
 
 
-// ---------------------- //
+// ----------------------------------------------------------------------------- //
 
 
-// ---------------------- //
+
+
+
+// ----------------------------------------------------------------------------- //
 // ***** Methods, Revisited ***** //
 
 // Create movies array
@@ -154,6 +172,35 @@ console.log(favMovies);
 // - F&F:
 const spot2 = favMovies.indexOf("Fast and Furious");
 console.log(spot2)
-// ---------------------- //
+// ----------------------------------------------------------------------------- //
 
+
+
+
+
+// ----------------------------------------------------------------------------- //
+// ***** Where is Waldo ***** //
+
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+
+                    // Remove Eggbert (hint look at the slice/splice method(s))
+                    // Change "Neff" to "No One"
+                    // Access and console.log "Waldo"
+
+// Using (1) to locate the part of the array where "Eggbert" is located and (1) to remove one item
+let removed = whereIsWaldo.splice(1,1);
+
+// Using [1] to select the specific array and [2] for the specific item and replacing it with "No One"
+whereIsWaldo[1][2] = "No One";
+// Log the results of updating "Neff" to "No One"
+console.log(whereIsWaldo);
+
+// Using [2] to access the 3rd array then [1] to get the nested second part of that array and [1] to access the second item 'Waldo'
+const waldo = whereIsWaldo[2][1][1];
+// Log the results of finding "Waldo"
+console.log(waldo);
+
+// ----------------------------------------------------------------------------- //
 
