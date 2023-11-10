@@ -234,3 +234,17 @@ for (let i = 1; i <= 20; i++) {
 // ----------------------------------------------------------------------------- //
 // ***** Find the Median ***** //
 
+//Find the Median
+//Find the median number in the following nums array, then console.log that number.
+//hint if you check the length of the array / 2, you might get not get a whole number. In which case, look into Math.floor( // something )
+
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+// sort the array into numerical order.
+nums.sort();
+// create a variable the uses the sorted array, looking for the lenght (or count of it's in the variable),
+// then divided in half and rounded down since there is an odd number of items in the array.
+const median = nums[Math.floor(nums.length / 2)];
+// Log the results of the median variable
+console.log(median);
+
+// ----------------------------------------------------------------------------- //
